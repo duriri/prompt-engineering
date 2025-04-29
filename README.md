@@ -1,66 +1,34 @@
-# 🧠 Prompt Engineering Patterns
+Prompt Engineering Patterns Repository
+Welcome to the Prompt Engineering Patterns Repository, a comprehensive resource dedicated to the art and science of crafting effective prompts for large language models (LLMs) such as GPT, Claude, and Mistral. Prompt engineering involves designing precise and contextually appropriate inputs to elicit optimal outputs from LLMs, balancing creativity and technical rigor.
+This repository provides a curated collection of prompting techniques, each accompanied by clear explanations, practical examples, and use cases. These patterns are designed to be reusable across various tasks, including text generation, reasoning, code synthesis, and more, enabling practitioners to achieve consistent and high-quality results.
+Why Prompt Engineering Matters
+Prompt engineering is critical because the structure, phrasing, and context of a prompt significantly influence an LLM's performance. Research shows that well-crafted prompts can improve model accuracy and relevance, especially in complex tasks like reasoning or creative writing (Brown et al., 2020; Liu et al., 2021). By leveraging repeatable prompt patterns, users can reduce trial-and-error, streamline workflows, and adapt techniques to diverse applications.
+Prompting Techniques
+This repository covers the following widely adopted prompt engineering techniques, each detailed in its own dedicated subdirectory:
 
-Prompt engineering is the art and science of crafting inputs ("prompts") to get desired outputs from large language models (LLMs) like GPT, Claude, or Mistral. The way you ask matters — even small changes in wording can significantly impact the results.
+Chain of Thought (CoT): Encourages step-by-step reasoning to enhance performance on logical, mathematical, and analytical tasks.
+Few-Shot Prompting: Provides input-output examples to guide the model, ideal for tasks where fine-tuning is unavailable.
+Zero-Shot Prompting: Relies on clear instructions without examples, leveraging the model's pre-trained capabilities.
+Role Prompting: Assigns a specific persona or role to the model to tailor tone, style, or expertise.
+Self-Consistency: Uses multiple model responses with majority voting to improve reliability in reasoning tasks.
 
-Although prompts can vary across different models and tasks, there are recurring **prompting techniques** that often work well. In this repository, we explore some of the most common and powerful prompt patterns with clear examples.
+Each technique includes a detailed README with definitions, examples, and best practices, making this repository a practical toolkit for researchers, developers, and AI enthusiasts.
+Getting Started
+To explore the patterns:
 
----
+Navigate to the subdirectory of the desired prompting technique.
+Review the README for an overview, use cases, and example prompts.
+Experiment with the provided examples using your preferred LLM platform.
+Adapt and extend the patterns to suit your specific tasks.
 
-## 🔍 Why Prompt Patterns Matter?
+Contributing
+Contributions are welcome! If you have additional prompt patterns, improvements, or examples, please submit a pull request or open an issue. Ensure your contributions align with the repository's structure and include clear documentation.
+Author
+Faeze Abdoli Nejad🎓 M.Sc. in Artificial Intelligence (Specializing in NLP & LLMs)📧 Contact: Telegram: @Ml_duriri🌟 Simplifying AI for Everyone
+References
 
-Each task (e.g. summarization, reasoning, code generation) and each model may respond better to different prompting styles. Instead of writing prompts from scratch every time, it's helpful to learn **repeatable patterns** that often produce better results.
+Brown, T., et al. (2020). Language Models are Few-Shot Learners. arXiv preprint arXiv:2005.14165.
+Liu, P., et al. (2021). Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing. arXiv preprint arXiv:2107.13586.
 
----
-
-## 🧰 Prompting Techniques Covered
-
-Here are some of the most important and widely used prompt engineering methods:
-
-### 🧠 Chain of Thought (CoT)
-Encourage the model to reason step by step before answering. Great for logic, math, and reasoning problems.
-
-> "Let's think step by step."
-
----
-
-### 📚 Few-Shot Prompting
-Show the model a few examples of input-output pairs before giving it a new one. Useful when fine-tuning is not available.
-
-> Input → Output  
-> Input → Output  
-> New Input → ?
-
----
-
-### 🎯 Zero-Shot Prompting
-Give the model a task without any examples — just a clear instruction. Surprisingly powerful with modern models.
-
-> "Summarize the following text in one sentence."
-
----
-
-### 🧑‍🏫 Role Prompting
-Assign a role or identity to the model to influence its behavior or tone.
-
-> "You are a professional editor. Fix grammar and tone in the following text."
-
----
-
-### 🔁 Self-Consistency
-Ask the model multiple times and use majority voting or pick the most consistent answer. Useful to reduce randomness in reasoning tasks.
-
----
-
-## 🙋‍♀️ Author
-
-**Faeze Abdoli Nejad**  
-🎓 M.Sc. in AI (specialized in NLP & LLMs)  
-📢 [Telegram: @Ml_duriri](https://t.me/Ml_duriri) – *Simplifying AI for Everyone*
-
----
-
----
-
-## 📄 License
-
-MIT License
+License
+This repository is licensed under the MIT License.
