@@ -1,5 +1,5 @@
 # Few-Shot Prompting
-![Few-Shot Prompting](![Few-Shot Prompting](https://raw.githubusercontent.com/duriri/prompt-engineering/main/patterns/cot.webp)
+![Few-Shot Prompting](![Few-Shot Prompting](https://github.com/duriri/prompt-engineering/blob/main/patterns/Blank%20diagram.png)
 )
 
 ## Overview
