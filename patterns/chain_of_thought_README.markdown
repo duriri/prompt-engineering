@@ -1,5 +1,5 @@
 # Chain of Thought (CoT) Prompting
-![Uploading image.png…]()
+
 
 ## Overview
 
