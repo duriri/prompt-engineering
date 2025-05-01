@@ -8,7 +8,7 @@ Chain-of-Thought (CoT) prompting is a powerful technique in prompt engineering t
 
 
 ## Why CoT Prompting Matters
-While LLMs are capable of generating fluent and often accurate responses, they can struggle with multi-step reasoning, arithmetic, and logic-based problems. CoT prompting enhances model reliability by asking it to <u>“think aloud”</u>  making its decision-making process transparent, interpretable, and often more accurate.
+While LLMs are capable of generating fluent and often accurate responses, they can struggle with multi-step reasoning, arithmetic, and logic-based problems. CoT prompting enhances model reliability by asking it to “think aloud”  making its decision-making process transparent, interpretable, and often more accurate.
 
 Instead of producing answers directly, CoT prompts encourage the model to break down the problem, reflect on its components, and solve it step-by-step — just like a human would.
 
