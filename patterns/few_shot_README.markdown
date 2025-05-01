@@ -1,6 +1,5 @@
 # Few-Shot Prompting
-![Few-Shot Prompting](![Few-Shot Prompting](https://github.com/duriri/prompt-engineering/blob/main/patterns/Blank%20diagram.png)
-)
+(![Few-Shot Prompting](https://github.com/duriri/prompt-engineering/blob/main/patterns/Blank%20diagram.png))
 
 ## Overview
 
