@@ -4,7 +4,14 @@
 
 ## Overview
 
-Chain of Thought (CoT) prompting is a technique that encourages large language models (LLMs) to break down complex problems into intermediate steps before providing a final answer. Introduced by Wei et al. (2022), CoT significantly improves performance on tasks requiring logical reasoning, arithmetic, or multi-step decision-making by making the model's thought process explicit.
+Chain-of-Thought (CoT) prompting is a powerful technique in prompt engineering that helps large language models (LLMs) reason through complex tasks by explicitly walking through intermediate steps before reaching a final answer.
+
+
+## Why CoT Prompting Matters
+While LLMs are capable of generating fluent and often accurate responses, they can struggle with multi-step reasoning, arithmetic, and logic-based problems. CoT prompting enhances model reliability by asking it to <u>“think aloud”</u>  making its decision-making process transparent, interpretable, and often more accurate.
+
+Instead of producing answers directly, CoT prompts encourage the model to break down the problem, reflect on its components, and solve it step-by-step — just like a human would.
+
 
 ## How It Works
 
