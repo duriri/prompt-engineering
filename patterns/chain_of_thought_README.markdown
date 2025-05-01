@@ -1,4 +1,5 @@
 # Chain of Thought (CoT) Prompting
+![Uploading image.png…]()
 
 ## Overview
 
@@ -18,19 +19,21 @@ In CoT prompting, the user includes an instruction like "Let's think step by ste
 
 **Prompt**:
 ```
-Solve the following problem step by step: If a shirt costs $20 after a 20% discount, what was the original price?
-
-Let's think step by step:
-1. Let the original price be X.
-2. A 20% discount means the sale price is 80% of the original price, so 0.8X = 20.
-3. Solve for X: X = 20 / 0.8.
-4. Calculate: X = 25.
-Therefore, the original price was $25.
+The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.
+A: Adding all the odd numbers (9, 15, 1) gives 25. The answer is False.
+The odd numbers in this group add up to an even number: 17,  10, 19, 4, 8, 12, 24.
+A: Adding all the odd numbers (17, 19) gives 36. The answer is True.
+The odd numbers in this group add up to an even number: 16,  11, 14, 4, 8, 13, 24.
+A: Adding all the odd numbers (11, 13) gives 24. The answer is True.
+The odd numbers in this group add up to an even number: 17,  9, 10, 12, 13, 4, 2.
+A: Adding all the odd numbers (17, 9, 13) gives 39. The answer is False.
+The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82, 7, 1. 
+A:
 ```
 
 **Output**:
 ```
-The original price of the shirt was $25.
+Adding all the odd numbers (15, 5, 13, 7, 1) gives 41. The answer is False.
 ```
 
 ## Best Practices
