@@ -1,6 +1,6 @@
 # Chain of Thought (CoT) Prompting
 
-![Chain of Thought]([images/cot-example.pn](https://github.com/duriri/prompt-engineering/blob/main/patterns/cot.webp)g)
+![Chain of Thought](https://raw.githubusercontent.com/duriri/prompt-engineering/main/patterns/cot.webp)
 
 ## Overview
 
