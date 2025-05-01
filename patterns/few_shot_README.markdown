@@ -1,4 +1,6 @@
 # Few-Shot Prompting
+![Few-Shot Prompting](![Chain of Thought](https://raw.githubusercontent.com/duriri/prompt-engineering/main/patterns/cot.webp)
+)
 
 ## Overview
 
