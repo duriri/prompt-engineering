@@ -27,26 +27,73 @@ While LLMs can follow reasoning chains (using Chain-of-Thought prompting), their
 
 ### 🔹 Prompt:
 
-```text
-Solve the following problem step-by-step:
-If you buy 3 books that cost $12 each and get a $6 discount, how much do you pay?
+```
+# Pseudo-code for generating multiple reasoning paths for a question
 
-Let's think step by step.
+def self_consistency_reasoning(problem, num_paths=3):
+    """
+    Generate multiple reasoning paths to solve the given problem and select the most consistent answer.
+
+    Args:
+        problem (str): The problem statement to solve.
+        num_paths (int): The number of reasoning paths to generate.
+
+    Returns:
+        str: The most consistent answer after evaluating all paths.
+    """
+    prompt_template = """
+    Problem: {problem}
+    Reasoning path {path_number}:
+    Solve this problem step-by-step, explaining the reasoning for each step.
+    Answer (True/False): 
+    """
+
+    paths = []  # Store all reasoning paths
+    answers = []  # Store all answers (True/False)
+
+    # Generate reasoning paths
+    for i in range(num_paths):
+        chain = prompt_template.format(problem=problem, path_number=i + 1)
+        response = llm.generate(chain)  # Assume this generates reasoning for a path
+        paths.append(response)
+
+        # Extract the final answer from the reasoning
+        final_answer = extract_answer_from_reasoning(response)
+        answers.append(final_answer)
+
+    # Select the most consistent answer (e.g., majority vote)
+    consistent_answer = max(set(answers), key=answers.count)
+
+    return consistent_answer
+
+# Example usage:
+problem = "The sum of the angles of a triangle is always 180 degrees. True or False?"
+result = self_consistency_reasoning(problem)
+
+print(f"Most consistent answer: {result}")
+
 ```
 
 ### 🔹 Sampled Outputs:
+```
+Reasoning Path 1: 
+- A triangle has three angles.
+- In Euclidean geometry, the sum of the interior angles of any triangle is always 180 degrees.
+- Conclusion: True.
 
-1. 3 × 12 = 36 → 36 − 6 = **30**
-2. 12 × 3 = 36 → 36 − 6 = **30**
-3. 3 books: 3 × 12 = 36 → total cost = 36 − 6 = **30**
-4. 3 × 12 = 36 → discount is 6 → 36 − 6 = **30**
-5. 12 − 6 = 6 → 6 × 3 = **18** ❌ (incorrect logic)
+Reasoning Path 2: 
+- A triangle has three angles.
+- By the geometry of flat surfaces (Euclidean space), the sum of these angles must always be 180 degrees.
+- Conclusion: True.
 
-### ✅ Final Answer (by majority):
+Reasoning Path 3: 
+- A triangle has three angles.
+- In Euclidean space, the sum of these angles is 180 degrees, as proven by basic geometry principles.
+- Conclusion: True.
 
-**30**
+Most consistent answer: True
+```
 
----
 
 ## ✅ Best Practices
 
