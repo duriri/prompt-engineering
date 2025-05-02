@@ -1,6 +1,12 @@
 # 🧠 Self-Consistency Prompting
 
+![Self-Consistency Prompting](https://github.com/duriri/prompt-engineering/blob/main/patterns/Self-Consistency.png)
+
+
 Self-Consistency Prompting is an advanced technique used in prompt engineering to enhance the **accuracy** and **reliability** of outputs from Large Language Models (LLMs). Instead of relying on a single reasoning path, this method generates multiple reasoning chains and selects the final answer through **majority voting**.
+
+
+
 
 ---
 
@@ -118,3 +124,4 @@ Self-Consistency is particularly effective for:
 ## 📚 Reference
 
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., ... & Le, Q. (2022). **Chain of Thought Prompting Elicits Reasoning in Large Language Models**. *arXiv preprint arXiv:2201.11903*.
+https://github.com/NirDiamant/Prompt_Engineering/blob/main/all_prompt_engineering_techniques/self-consistency.ipynb
