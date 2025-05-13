@@ -23,9 +23,11 @@ Explicitly listing exclusions ensures the model avoids specific themes or terms.
 
 🛑3. Implementing Constraints
 Using LangChain, you can enforce detailed constraints like word limits, tone, or banned terms. Below is a Python example that generates a cybersecurity summary with specific exclusions:
+
+```
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
-''' 
+
 llm = OpenAI(model="gpt-4")
 prompt = PromptTemplate(
     input_variables=["topic"],
@@ -34,8 +36,10 @@ prompt = PromptTemplate(
 chain = prompt | llm
 output = chain.invoke({"topic": "cybersecurity"})
 print(output)
-''' 
-Example Output: "Cybersecurity protects systems and data from unauthorized access. It includes practices like encryption, firewalls, and secure coding to ensure confidentiality and integrity. Regular updates and monitoring reduce risks." (47 words)
+```
+
+
+✍🏻Example Output: "Cybersecurity protects systems and data from unauthorized access. It includes practices like encryption, firewalls, and secure coding to ensure confidentiality and integrity. Regular updates and monitoring reduce risks." (47 words)
 
 
 ❌4. Evaluation and Refinement
