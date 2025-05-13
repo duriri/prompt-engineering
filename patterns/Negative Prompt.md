@@ -1,4 +1,4 @@
-### Negative Prompting: Avoiding Undesired Outputs
+➖🟥 ### Negative Prompting: Avoiding Undesired Outputs
 Negative prompting is a powerful technique for steering language models to produce precise, relevant outputs by specifying what should not be included. This approach is essential for managing sensitive topics, ensuring factual accuracy, and maintaining a consistent tone or style in applications like content generation, customer support, and education.
 
 
