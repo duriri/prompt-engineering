@@ -16,13 +16,23 @@ Negative prompting is a powerful technique for steering language models to produ
 🔞1. Using Negative Examples
 
 
-Negative examples help guide the model by clarifying what to avoid. For instance, when asking for an explanation of "gravity" for young learners, you might instruct:"Explain gravity in simple terms, without using formulas, scientific jargon, or mentioning scientists like Newton."Example Output: "Gravity is the force that pulls things down to Earth, like when a ball falls after you throw it up."
+Negative examples help guide the model by clarifying what to avoid. For instance, when asking for an explanation of "gravity" for young learners, you might instruct:
+
+
+📛"Explain gravity in simple terms, without using formulas, scientific jargon, or mentioning scientists like Newton.
+
+"Example Output: "Gravity is the force that pulls things down to Earth, like when a ball falls after you throw it up."
 
 
 🚫2. Specifying Exclusions
 
 
-Explicitly listing exclusions ensures the model avoids specific themes or terms. For example, when discussing "healthy eating," you might prompt:"Describe the benefits of healthy eating without mentioning dieting, calorie counting, or weight loss."Example Output: "Eating healthy foods like fruits and vegetables boosts energy, improves sleep, and enhances mood."
+Explicitly listing exclusions ensures the model avoids specific themes or terms. For example, when discussing "healthy eating," you might prompt:
+
+
+📛"Describe the benefits of healthy eating without mentioning dieting, calorie counting, or weight loss.
+
+"Example Output: "Eating healthy foods like fruits and vegetables boosts energy, improves sleep, and enhances mood."
 
 
 🛑3. Implementing Constraints
@@ -30,6 +40,7 @@ Explicitly listing exclusions ensures the model avoids specific themes or terms.
 
 Using LangChain, you can enforce detailed constraints like word limits, tone, or banned terms. Below is a Python example that generates a cybersecurity summary with specific exclusions:
 
+📛
 ```
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
@@ -45,7 +56,7 @@ print(output)
 ```
 
 
-✍🏻Example Output: "Cybersecurity protects systems and data from unauthorized access. It includes practices like encryption, firewalls, and secure coding to ensure confidentiality and integrity. Regular updates and monitoring reduce risks." (47 words)
+Example Output: "Cybersecurity protects systems and data from unauthorized access. It includes practices like encryption, firewalls, and secure coding to ensure confidentiality and integrity. Regular updates and monitoring reduce risks." (47 words)
 
 
 ❌4. Evaluation and Refinement
